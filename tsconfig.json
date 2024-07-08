@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+      "outDir": "./dist",           // Directs output to the dist folder
+      "rootDir": "./src",           // Root directory of source files
+      "module": "es6",              // Specify module code generation as ES6
+      "target": "es5",              // Specify ECMAScript target version as ES5
+      "sourceMap": true,            // Generate corresponding '.map' file
+      "strict": true,               // Enable all strict type-checking options
+      "esModuleInterop": true       // Enables ES6-style module import interoperability
+    },
+    "include": [
+      "src/**/*"                    // Include all files in src folder
+    ]
+}
+  

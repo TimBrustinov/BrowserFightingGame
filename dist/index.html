@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+    rel="stylesheet"
+  />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Canvas Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Ensure this path is correct -->
+  </head>
+  <body>
+    <div id="canvas-container">
+      <div id="game-ui">
+        <div id="player-health-container">
+          <div id="player-health-background"></div>
+          <div id="player-health"></div>
+        </div>
+        <div id="timer">10</div>
+
+        <div id="enemy-health-container">
+          <div id="enemy-health-background"></div>
+          <div id="enemy-health"></div>
+        </div>
+      </div>
+      <div id="game-state"></div>
+      <canvas></canvas>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
+      integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="sprite.js"></script>
+    <script src="fighter.js"></script>
+    <script src="index.js"></script>
+    <!-- Ensure this path is correct -->
+  </body>
+</html>
