@@ -10,6 +10,10 @@
     },
     "include": [
       "src/**/*"                    // Include all files in src folder
-    ]
+    ],
+    "scripts": {
+      "build": "npm run compile",                // "build" script compiles the code using the TypeScript compiler
+      "compile": "tsc",                          // "compile" script runs the TypeScript compiler
+    }
 }
   
