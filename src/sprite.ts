@@ -29,6 +29,7 @@ class Sprite
 
     draw()
     {
+        this.image.onload = () => {
         ctx.drawImage(
             this.image,
             this.framesCurrent * (this.image.width / this.maxFrames),
@@ -40,6 +41,7 @@ class Sprite
             (this.image.width / this.maxFrames) * this.scale, 
             this.image.height * this.scale
         );
+       }
     }
 
     animateFrames()
