@@ -15,7 +15,7 @@ var player = new Fighter({ x: 180, y: 200 }, { x: 0, y: 10 }, 'red', { x: 50, y:
     takeHit: { imgSrc: 'assets/samuraiMack/Take hit.png', maxFrames: 4 },
     death: { imgSrc: 'assets/samuraiMack/death.png', maxFrames: 6 }
 });
-var enemy = new Fighter({ x: 750, y: 200 }, { x: 0, y: 0 }, 'blue', { x: -150, y: 0 }, 'assets/kenji/idle.png', 2.5, 4, { x: 215, y: 170 }, {
+var enemy = new Fighter({ x: 750, y: 200 }, { x: 0, y: 0 }, 'blue', { x: -150, y: 0 }, '../assets/kenji/idle.png', 2.5, 4, { x: 215, y: 170 }, {
     idle: { imgSrc: 'assets/kenji/idle.png', maxFrames: 4 },
     run: { imgSrc: 'assets/kenji/run.png', maxFrames: 8 },
     jump: { imgSrc: 'assets/kenji/jump.png', maxFrames: 2 },
