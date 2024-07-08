@@ -12,8 +12,8 @@
       "src/**/*"                    // Include all files in src folder
     ],
     "scripts": {
-      "build": "npm run compile",                // "build" script compiles the code using the TypeScript compiler
-      "compile": "tsc",                          // "compile" script runs the TypeScript compiler
+      "prebuild": "chmod +x node_modules/.bin/tsc",
+      "buld": "tsc"                      // "compile" script runs the TypeScript compiler
     }
 }
   
