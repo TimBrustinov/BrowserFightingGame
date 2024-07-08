@@ -5,26 +5,26 @@ canvas.width = 1024;
 canvas.height = 576;
 
 ctx.fillRect(0, 0, canvas.width, canvas.height);
-const background = new Sprite({ x: 0, y: 0 }, '../assets/background.png');
-const shop = new Sprite({ x: 650, y: 160 }, '../assets/shop.png', 2.5, 6);
+const background = new Sprite({ x: 0, y: 0 }, 'assets/background.png');
+const shop = new Sprite({ x: 650, y: 160 }, 'assets/shop.png', 2.5, 6);
 
 const player = new Fighter(
     { x: 180, y: 200 }, 
     { x: 0, y: 10 }, 
     'red', 
     {x: 50, y: 0}, 
-    '../assets/samuraiMack/idle.png', 
+    'assets/samuraiMack/idle.png', 
     2.5, 
     8, 
     {x: 215, y: 157}, 
     {
-        idle: {imgSrc: '../assets/samuraiMack/idle.png', maxFrames: 8}, 
-        run: {imgSrc: '../assets/samuraiMack/run.png', maxFrames: 8}, 
-        jump: {imgSrc: '../assets/samuraiMack/jump.png', maxFrames: 2},
-        attack1: {imgSrc: '../assets/samuraiMack/attack1.png', maxFrames: 6},
-        fall: {imgSrc: '../assets/samuraiMack/fall.png', maxFrames: 2},
-        takeHit: {imgSrc: '../assets/samuraiMack/Take hit.png', maxFrames: 4},
-        death: {imgSrc: '../assets/samuraiMack/death.png', maxFrames: 6}
+        idle: {imgSrc: 'assets/samuraiMack/idle.png', maxFrames: 8}, 
+        run: {imgSrc: 'assets/samuraiMack/run.png', maxFrames: 8}, 
+        jump: {imgSrc: 'assets/samuraiMack/jump.png', maxFrames: 2},
+        attack1: {imgSrc: 'assets/samuraiMack/attack1.png', maxFrames: 6},
+        fall: {imgSrc: 'assets/samuraiMack/fall.png', maxFrames: 2},
+        takeHit: {imgSrc: 'assets/samuraiMack/Take hit.png', maxFrames: 4},
+        death: {imgSrc: 'assets/samuraiMack/death.png', maxFrames: 6}
     });
 
 const enemy = new Fighter(
@@ -37,13 +37,13 @@ const enemy = new Fighter(
     4, 
     {x: 215, y: 170}, 
     {
-        idle: {imgSrc: '../assets/kenji/idle.png', maxFrames: 4}, 
-        run: {imgSrc: '../assets/kenji/run.png', maxFrames: 8}, 
-        jump: {imgSrc: '../assets/kenji/jump.png', maxFrames: 2},
-        attack1: {imgSrc: '../assets/kenji/attack1.png', maxFrames: 4},
-        fall: {imgSrc: '../assets/kenji/fall.png', maxFrames: 2},
-        takeHit: {imgSrc: '../assets/kenji/Take Hit.png', maxFrames: 3},
-        death: {imgSrc: '../assets/kenji/death.png', maxFrames: 7}
+        idle: {imgSrc: 'assets/kenji/idle.png', maxFrames: 4}, 
+        run: {imgSrc: 'assets/kenji/run.png', maxFrames: 8}, 
+        jump: {imgSrc: 'assets/kenji/jump.png', maxFrames: 2},
+        attack1: {imgSrc: 'assets/kenji/attack1.png', maxFrames: 4},
+        fall: {imgSrc: 'assets/kenji/fall.png', maxFrames: 2},
+        takeHit: {imgSrc: 'assets/kenji/Take Hit.png', maxFrames: 3},
+        death: {imgSrc: 'assets/kenji/death.png', maxFrames: 7}
     });
 
 const playerHealth = document.getElementById('player-health') as HTMLDivElement;
