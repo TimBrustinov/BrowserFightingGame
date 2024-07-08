@@ -13,7 +13,7 @@
     ],
     "scripts": {
       "prebuild": "chmod +x node_modules/.bin/tsc",
-      "buld": "tsc"                      // "compile" script runs the TypeScript compiler
+      "build": "tsc"                      // "compile" script runs the TypeScript compiler
     }
 }
   
