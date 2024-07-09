@@ -11,7 +11,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Canvas Game</title>
     <link rel="stylesheet" href="style.css" />
-    <!-- Ensure this path is correct -->
   </head>
   <body>
     <div id="canvas-container">
@@ -21,14 +20,35 @@
           <div id="player-health"></div>
         </div>
         <div id="timer">10</div>
-
         <div id="enemy-health-container">
           <div id="enemy-health-background"></div>
           <div id="enemy-health"></div>
         </div>
       </div>
       <div id="game-state"></div>
-      <canvas></canvas>
+      <canvas width="800" height="600"></canvas>
+    </div>
+
+    <div id="instructions">
+      <h2>How to Play</h2>
+      <div class="player-instructions">
+        <h3>Player 1</h3>
+        <p>Move Left: "A"</p>
+        <p>Move Right: "D"</p>
+        <p>Jump: "W"</p>
+        <p>Attack: "Space bar"</p>
+      </div>
+      <div class="player-instructions">
+        <h3>Player 2</h3>
+        <p>Move Left: "Arrow Left"</p>
+        <p>Move Right: "Arrow Right"</p>
+        <p>Jump: "Arrow Up"</p>
+        <p>Attack: "Arrow Down"</p>
+      </div>
+      <div class="game-instructions">
+        <h3>General</h3>
+        <p>Restart Game: "Ctrl + R"</p>
+      </div>
     </div>
 
     <script
@@ -40,6 +60,5 @@
     <script src="sprite.js"></script>
     <script src="fighter.js"></script>
     <script src="index.js"></script>
-    <!-- Ensure this path is correct -->
   </body>
 </html>
